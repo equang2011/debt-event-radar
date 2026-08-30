@@ -1,5 +1,6 @@
 import httpx
 
+
 class EdgarClient:
     BASE_URL = "https://data.sec.gov"
 
@@ -23,3 +24,11 @@ class EdgarClient:
         response = self.client.get(url)
         response.raise_for_status()
         return response.text
+
+    def get_submission_history(self, filename: str) -> dict:
+        url = self.BASE_URL + "/submissions/" + filename
+
+        response = self.client.get(url)
+        response.raise_for_status()
+
+        return response.json()
