@@ -1,13 +1,13 @@
 [project]
-name = "edgar-amendments"
+name = "debt-event-radar"
 version = "0.1.0"
-description = "EDGAR amendment intelligence"
+description = "Point-in-time debt events extracted from SEC EDGAR financing exhibits"
 requires-python = ">=3.12"
 
 dependencies = [
     "httpx",
     "beautifulsoup4>=4.9.0",
-    "scikit-learn">=1.4,
+    "scikit-learn>=1.4",
 ]
 
 [project.optional-dependencies]

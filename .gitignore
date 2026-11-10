@@ -1,7 +1,10 @@
-
-
+# Local-only context
 /internal
 /context
+
+# Fetched EDGAR data and intermediate outputs (regenerable).
+# The hand-labeled gold set will live outside this folder and be committed.
+/data/
 
 venv/
 __pycache__/
