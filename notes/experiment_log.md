@@ -1,4 +1,10 @@
 
+## 2026-11-11
+
+- used script to check acceptance time
+- acceptance time is 4 hours ahead of time in header
+- decision: Use the JSON acceptanceDateTime (verified UTC) to store
+
 ## 2026-11-09
 - Learned: recent is a dict of parallel lists; acceptanceDateTime looks like UTC.
 - Gotcha: python scripts/x.py fails; use python -m (sys.path[0] is the script's folder).
